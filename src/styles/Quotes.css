@@ -1,0 +1,25 @@
+.quotes {
+  background-color: rgb(44, 44, 44);
+}
+
+.quotes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.bio-quotes {
+  display: flex;
+  width: 40%;
+  margin-top: 30px;
+}
+
+.color-bar {
+  width: 5px;
+  height: 135px;
+  background-color: #667eea;
+  margin-right: 20px;
+}
