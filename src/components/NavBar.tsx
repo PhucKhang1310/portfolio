@@ -1,5 +1,5 @@
 import type { TabsProps } from "antd";
-import { ConfigProvider, Divider, Tabs } from "antd";
+import { ConfigProvider, Tabs } from "antd";
 import "../styles/NavBar.css";
 import PlanetCanvas from "./PlanetCanvas";
 import ScrollProgressBar from "./ScrollProgressBar";

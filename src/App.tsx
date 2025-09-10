@@ -1,9 +1,5 @@
 import NavBar from "./components/NavBar";
-import Biography from "./components/Biography";
 import Footer from "./components/Footer";
-import Quotes from "./components/Quotes";
-import MyProjects from "./components/MyProjects";
-import MyPlans from "./components/MyPlans";
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import UnderConstruction from "./components/UnderConstruction";
