@@ -26,6 +26,10 @@
   gap: 20px;
 }
 
+.navbar-links {
+  margin-top: 10px;
+}
+
 .navbar-links .ant-tabs .ant-tabs-nav,
 .ant-tabs-nav::before,
 .ant-tabs-tab::after,

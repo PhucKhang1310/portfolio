@@ -18,8 +18,9 @@ const NavBar = () => {
               cardBg: "transparent",
               itemColor: "white",
               inkBarColor: "transparent",
-              itemSelectedColor: "teal",
-              itemHoverColor: "teal",
+              itemSelectedColor: "rgba(0, 174, 197, 0.43)",
+              itemHoverColor: "rgba(0, 174, 197, 0.43)",
+              itemActiveColor: "rgba(0, 174, 197, 0.43)",
             },
             Divider:{
               marginLG: 0,

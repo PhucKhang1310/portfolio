@@ -1,5 +1,6 @@
 import { Card, Col, ConfigProvider, Row } from "antd";
 import Meta from "antd/es/card/Meta";
+import "../styles/ProjectCard.css";
 
 interface Props {
   cardInfo: { title: string; content: string }[];
@@ -11,7 +12,13 @@ const Projects = ({ cardInfo, rowSize = 3 }: Props) => {
     <ConfigProvider
       theme={{
         components: {
-          Card: {},
+          Card: {
+            colorBgContainer: "rgba(58, 58, 58, 1)",
+            colorBorderSecondary: "transparent",
+            colorTextHeading: "white",
+            colorTextDescription: "white",
+
+          },
         },
       }}
     >
@@ -21,7 +28,7 @@ const Projects = ({ cardInfo, rowSize = 3 }: Props) => {
             key={index}
             span={24 / rowSize}
           >
-            <Card hoverable={true} cover={<img src="./cover.jpg" />}>
+            <Card hoverable={true} title={info.title} cover={<img className="cover-photo" src="./cover.jpg" />}>
               <Meta title={info.title} description={info.content} />
             </Card>
           </Col>
