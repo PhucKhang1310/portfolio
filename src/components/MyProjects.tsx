@@ -14,7 +14,7 @@ const MyProjects = () => {
         }
       }}>
           <Title className="projects-title" level={4}>
-            Things I have worked on
+            Things I've worked on
           </Title>
           <ProjectCarousel />
       </ConfigProvider>

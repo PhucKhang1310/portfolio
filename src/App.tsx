@@ -3,6 +3,7 @@ import Biography from "./components/Biography";
 import Footer from "./components/Footer";
 import Quotes from "./components/Quotes";
 import MyProjects from "./components/MyProjects";
+import MyPlans from "./components/MyPlans";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Biography />
       <Quotes />
       <MyProjects />
+      <MyPlans />
       <Footer />
     </div>
   );

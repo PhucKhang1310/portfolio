@@ -55,7 +55,7 @@ const Biography = () => {
                     alt="Khang Phuc Nguyen"
                   />
                   <div className="bio-img-tagline">
-                    <Text>AiTA Lab, Dept. of Computing Fundamentals</Text>
+                    <Text>Me, Doin' Work</Text>
                   </div>
                 </div>
               </div>
