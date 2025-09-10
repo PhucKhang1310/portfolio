@@ -1,6 +1,7 @@
 .biography {
   background-color: rgb(44, 44, 44);
-  margin-top: -10px;
+  position: relative;
+  margin-top: 60px;
 }
 
 .bio-container {

@@ -39,7 +39,8 @@ const Biography = () => {
                     knack for creating innovative solutions. I specialize in
                     full-stack development, and I'm always eager to learn new
                     technologies and improve my skills.
-                    <br />
+                  </Paragraph>
+                  <Paragraph>
                     When I'm not coding, you can find me exploring the latest
                     tech trends or working on personal projects. Let's connect
                     and build something amazing together!

@@ -22,7 +22,7 @@ const NavBar = () => {
               itemHoverColor: "teal",
             },
             Divider:{
-              marginLG: 10,
+              marginLG: 0,
             }
           },
         }}
@@ -41,7 +41,7 @@ const NavBar = () => {
             />
           </div>
         </div>
-        <Divider size="large" style={{ borderColor: "rgba(152, 182, 228, 1)" }} />
+        <Divider size="large" style={{ borderColor: "rgba(152, 182, 228, 1)"}} />
       </ConfigProvider>
     </div>
   );
