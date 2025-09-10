@@ -13,9 +13,6 @@ const otherInfo = [
 ];
 
 const ProjectCarousel = () => {
-  const onChange = (currentSlide: number) => {
-    console.log(currentSlide);
-  };
   return (
     <div style={{ padding: "10px 30px", backgroundColor:"rgb(44,44,44)" }}>
       <ConfigProvider
@@ -27,7 +24,7 @@ const ProjectCarousel = () => {
           },
         }}
       >
-        <Carousel autoplay={true} afterChange={onChange} arrows={true} style={{ maxWidth: 800, margin: "0 auto" }}>
+        <Carousel autoplay={true} arrows={true} style={{ maxWidth: 800, margin: "0 auto" }}>
           <div>
             <ProjectCards cardInfo={projectInfo} />
           </div>

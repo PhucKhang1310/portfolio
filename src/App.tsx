@@ -5,10 +5,14 @@ import Quotes from "./components/Quotes";
 import MyProjects from "./components/MyProjects";
 import MyPlans from "./components/MyPlans";
 
+const onChange = (key: string) => {
+  console.log(key)
+}
+
 const App = () => {
   return (
     <div>
-      <NavBar />
+      <NavBar onChange={onChange}/>
       <Biography />
       <Quotes />
       <MyProjects />

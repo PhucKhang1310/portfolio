@@ -2,13 +2,18 @@ import type { TabsProps } from "antd";
 import { ConfigProvider, Divider, Tabs } from "antd";
 import "../styles/NavBar.css";
 import PlanetCanvas from "./PlanetCanvas";
+import ScrollProgressBar from "./ScrollProgressBar";
 
 const tabs: TabsProps["items"] = [
   { key: "Home", label: "Home" },
   { key: "Contact", label: "Contact" },
 ];
 
-const NavBar = () => {
+interface NavBarProps {
+  onChange: (key: string) => void;
+}
+
+const NavBar = ({ onChange }: NavBarProps) => {
   return (
     <div className="navbar">
       <ConfigProvider
@@ -22,9 +27,6 @@ const NavBar = () => {
               itemHoverColor: "rgba(0, 174, 197, 0.43)",
               itemActiveColor: "rgba(0, 174, 197, 0.43)",
             },
-            Divider:{
-              marginLG: 0,
-            }
           },
         }}
       >
@@ -39,10 +41,13 @@ const NavBar = () => {
               items={tabs}
               indicator={{ size: 0 }}
               size="large"
+              onChange={onChange}
             />
           </div>
         </div>
-        <Divider size="large" style={{ borderColor: "rgba(152, 182, 228, 1)"}} />
+        <div className="scroll-bar">
+          <ScrollProgressBar />
+        </div>
       </ConfigProvider>
     </div>
   );
