@@ -16,6 +16,7 @@ interface NavBarProps {
 
 const NavBar = ({ onChange }: NavBarProps) => {
   const [drawerVisible, setDrawerVisible] = useState(false);
+  const [activeKey, setActiveKey] = useState("Home");
 
   const openDrawer = () => {
     setDrawerVisible(true);
@@ -25,6 +26,11 @@ const NavBar = ({ onChange }: NavBarProps) => {
   const closeDrawer = () => {
     setDrawerVisible(false);
     console.log("Drawer closed");
+  };
+
+  const handleTabChange = (key: string) => {
+    setActiveKey(key);
+    onChange(key);
   };
 
   return (
@@ -40,7 +46,7 @@ const NavBar = ({ onChange }: NavBarProps) => {
               items={tabs}
               indicator={{ size: 0 }}
               size="large"
-              onChange={onChange}
+              onChange={handleTabChange}
             />
           </div>
         </div>
@@ -56,16 +62,15 @@ const NavBar = ({ onChange }: NavBarProps) => {
             key="top"
             destroyOnHidden={true}
             height={200}
-            mask={false}
           >
             <Tabs
               defaultActiveKey="Home"
+              activeKey={activeKey}
               items={tabs}
               indicator={{ size: 0 }}
               size="large"
-              onChange={onChange}
+              onChange={handleTabChange}
               tabPosition="right"
-              
             />
           </Drawer>
         </div>

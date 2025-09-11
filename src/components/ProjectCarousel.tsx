@@ -16,7 +16,7 @@ const otherInfo = [
 const ProjectCarousel = () => {
   return (
     <div className={styles.container}>
-      <Carousel autoplay={true} arrows={true} className={styles.carousel}>
+      <Carousel autoplay={true} className={styles.carousel}>
         <div>
           <ProjectCards cardInfo={projectInfo} />
         </div>
