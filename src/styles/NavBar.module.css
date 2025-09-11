@@ -15,8 +15,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
-  padding-top: 20px;
+  width: 85%;
+  max-width: 1200px;
+  padding: 20px 10px 0 10px;
 }
 
 .navbarAvatar {
@@ -39,7 +40,6 @@
 :global(.ant-tabs-nav .ant-tabs-tab .ant-tabs-tab-btn) {
   color: white;
 }
-
 
 :global(.ant-tabs-nav .ant-tabs-tab-active .ant-tabs-tab-btn),
 :global(.ant-tabs-nav .ant-tabs-tab:hover .ant-tabs-tab-btn) {
@@ -69,20 +69,47 @@
   color: white !important;
 }
 
-:global(.ant-drawer-body){
+:global(.ant-drawer-body) {
   display: flex;
   justify-content: flex-end;
 }
 
-.mobileMenu{
+.mobileMenu {
   display: none;
 }
 
-@media (max-width: 768px){
-  .navbarLinks{
+@media (max-width: 768px) {
+  .navbarLinks {
     display: none;
   }
-  .mobileMenu{
+  .mobileMenu {
     display: block;
+  }
+
+  .navbarContainer {
+    width: 95%;
+    padding: 20px 5px 0 5px;
+  }
+
+  .planetContainer {
+    height: 50px;
+    width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    height: 70px;
+    padding-top: 10px;
+  }
+
+  .navbarContainer {
+    width: 100%;
+    padding: 10px 5px 0 5px;
+  }
+
+  .planetContainer {
+    height: 45px;
+    width: 70px;
   }
 }

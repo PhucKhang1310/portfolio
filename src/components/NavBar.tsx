@@ -45,28 +45,30 @@ const NavBar = ({ onChange }: NavBarProps) => {
           </div>
         </div>
         <div className={styles.mobileMenu}>
-            <Button onClick={openDrawer} type="text">
-              <MenuOutlined style={{ color: "white" }} />
-            </Button>
-            <Drawer
-              placement="top"
-              closable={false}
-              onClose={closeDrawer}
-              open={drawerVisible}
-              key="top"
-              destroyOnHidden={true}
-              height={200}
-            >
-              <Tabs
-                defaultActiveKey="Home"
-                items={tabs}
-                indicator={{ size: 0 }}
-                size="large"
-                onChange={onChange}
-                tabPosition="right"
-              />
-            </Drawer>
-          </div>
+          <Button onClick={openDrawer} type="text">
+            <MenuOutlined style={{ color: "white" }} />
+          </Button>
+          <Drawer
+            placement="top"
+            closable={false}
+            onClose={closeDrawer}
+            open={drawerVisible}
+            key="top"
+            destroyOnHidden={true}
+            height={200}
+            mask={false}
+          >
+            <Tabs
+              defaultActiveKey="Home"
+              items={tabs}
+              indicator={{ size: 0 }}
+              size="large"
+              onChange={onChange}
+              tabPosition="right"
+              
+            />
+          </Drawer>
+        </div>
       </div>
       <div className={styles.scrollBar}>
         <ScrollProgressBar />

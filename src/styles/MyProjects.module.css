@@ -4,12 +4,52 @@
   font-size: 20px;
 }
 
-.projectsTitle{
-    width: 40%;
+.projectsTitle {
+  width: 85%;
+  max-width: 1200px;
+  padding: 0 20px;
 }
 
 .projectsContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+@media (max-width: 1024px) {
+  .projectsTitle {
+    width: 90%;
+    padding: 0 15px;
+  }
+
+  .projectsContainer :global(h4.ant-typography) {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectsTitle {
+    width: 95%;
+    padding: 0 10px;
+  }
+
+  .projectsContainer :global(h4.ant-typography) {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projectsTitle {
+    width: 100%;
+    padding: 0 5px;
+  }
+
+  .projectsContainer {
+    padding: 10px 0;
+  }
+
+  .projectsContainer :global(h4.ant-typography) {
+    font-size: 14px;
+  }
 }

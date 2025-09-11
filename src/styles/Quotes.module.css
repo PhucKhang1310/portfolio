@@ -1,0 +1,59 @@
+.quotes {
+  background-color: rgb(44, 44, 44);
+}
+
+.quotesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.bioQuotes {
+  display: flex;
+  width: 40%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.colorBar {
+  width: 5px;
+  height: inherit;
+  background-color: #667eea;
+  margin-right: 20px;
+}
+
+:global(.ant-typography) {
+  color: white;
+  font-size: 18px;
+}
+
+:global(h4.ant-typography) {
+  color: white;
+  font-size: 20px;
+}
+
+:global(.ant-list-item) {
+  border: none !important;
+  border-bottom: 1px solid rgb(255, 255, 255) !important;
+  background-color: transparent !important;
+}
+
+:global(.ant-list-item:last-child) {
+  border-bottom: none !important;
+}
+
+
+.titleContainer, .quoteList{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 150;
+}
+
+.quoteList{
+  width: 100%;
+}
+

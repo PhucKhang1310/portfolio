@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding: 20px;
 }
 
 .footerIcon {
@@ -11,4 +12,31 @@
   object-fit: cover;
   filter: invert();
   background-color: transparent;
+  transition: transform 0.3s ease;
+}
+
+.footerIcon:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .footerContainer {
+    padding: 15px;
+  }
+
+  .footerIcon {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footerContainer {
+    padding: 10px;
+  }
+
+  .footerIcon {
+    height: 50px;
+    width: 50px;
+  }
 }

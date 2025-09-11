@@ -13,7 +13,7 @@ const UnderConstruction = () => {
   return (
     <div
       style={{
-        backgroundColor: "#f5f5f5",
+        backgroundColor: "transparent",
         minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
@@ -96,7 +96,7 @@ const UnderConstruction = () => {
           size="large"
           style={{
             marginTop: "2rem",
-            backgroundColor: "#595959",
+            backgroundColor: "transparent",
             borderColor: "#595959",
           }}
           onClick={() => window.history.back()}

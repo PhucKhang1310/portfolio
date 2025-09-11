@@ -6,23 +6,61 @@
 }
 
 .container {
-  padding: 40px;
+  padding: 40px 20px;
 }
 
 .card {
   background-color: rgba(58, 58, 58, 1);
   border: 1px solid rgba(58, 58, 58, 1);
+  height: 100%;
 }
 
 .card :global(.ant-card-body) {
- background-color: rgba(58, 58, 58, 1);
+  background-color: rgba(58, 58, 58, 1);
 }
 
 .card :global(.ant-card-meta-title),
 .card :global(.ant-card-meta-description),
 .card :global(.ant-card-meta-detail),
 .card :global(.ant-card-head-title) {
-    color: white;
-    background-color: rgba(58, 58, 58, 1);
+  color: white;
+  background-color: rgba(58, 58, 58, 1);
 }
 
+@media (max-width: 1024px) {
+  .container {
+    padding: 30px 15px;
+  }
+
+  .cover-photo {
+    height: 130px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 10px;
+  }
+
+  .cover-photo {
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px 5px;
+  }
+
+  .cover-photo {
+    height: 100px;
+  }
+
+  .card :global(.ant-card-meta-title) {
+    font-size: 14px;
+  }
+
+  .card :global(.ant-card-meta-description) {
+    font-size: 12px;
+  }
+}

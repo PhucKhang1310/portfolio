@@ -15,7 +15,8 @@
   display: grid;
   grid-template-columns: 60% 40%;
   gap: 2rem;
-  width: 40%;
+  width: 85%;
+  max-width: 1200px;
   align-items: center;
 }
 
@@ -30,7 +31,7 @@
 }
 
 .bioImg {
-  width: 160px ;
+  width: 160px;
   height: 220px;
   object-fit: cover;
   object-position: center;
@@ -60,19 +61,85 @@
   font-size: 45px;
 }
 
+@media (max-width: 1024px) {
+  .bioGrid {
+    width: 90%;
+    gap: 1.5rem;
+  }
+
+  .bioContainer :global(h1.ant-typography) {
+    font-size: 38px;
+  }
+
+  .bioContainer :global(.ant-typography) {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 768px) {
   .bioGrid {
     grid-template-columns: 1fr;
-    width: 80%;
+    width: 90%;
     text-align: center;
+    gap: 1rem;
   }
 
   .bioLeft {
     padding: 0;
+    text-align: center;
   }
 
   .bioRight {
     align-items: center;
     text-align: center;
+  }
+
+  .bioContainer :global(h1.ant-typography) {
+    font-size: 32px;
+  }
+
+  .bioContainer :global(.ant-typography) {
+    font-size: 15px;
+  }
+
+  .bioImg {
+    width: 140px;
+    height: 190px;
+  }
+
+  .bioImgTagline {
+    width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .biography {
+    margin-top: 90px;
+  }
+
+  .bioGrid {
+    width: 95%;
+    gap: 0.5rem;
+  }
+
+  .bioContainer :global(h1.ant-typography) {
+    font-size: 28px;
+  }
+
+  .bioContainer :global(.ant-typography) {
+    font-size: 14px;
+  }
+
+  .bioImg {
+    width: 120px;
+    height: 160px;
+  }
+
+  .bioImgTagline {
+    width: 120px;
+  }
+
+  .bioLeft {
+    padding: 10px;
   }
 }

@@ -1,15 +1,16 @@
-.plansContainer{
-    background-color: rgb(44,44,44);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 0;
+.plansContainer {
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
 }
 
-.plansTitle{
-    width: 40%;
-    text-align: left;
-    padding-bottom: 40px;
+.plansTitle {
+  width: 85%;
+  max-width: 1200px;
+  text-align: left;
+  padding-bottom: 40px;
 }
 
 .plansContainer :global(.ant-typography) {
@@ -36,11 +37,11 @@
 }
 
 .plansContainer :global(.ant-table-tbody > tr:hover > td) {
-    background-color: rgb(58, 58, 58) !important;
+  background-color: rgb(58, 58, 58) !important;
 }
 
 .plansContainer :global(.ant-table-tbody > tr > td .anticon) {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 .plansContainer :global(.ant-table-tbody > tr > td .anticon),
@@ -51,6 +52,77 @@
 .plansContainer :global(.ant-table-tbody > tr:hover > td .anticon svg),
 .plansContainer :global(.ant-table-tbody > tr:hover > td span.anticon),
 .plansContainer :global(.ant-table-tbody > tr:hover > td span) {
-    background-color: transparent !important;
-    background: transparent !important;
+  background-color: transparent !important;
+  background: transparent !important;
+}
+
+@media (max-width: 1024px) {
+  .plansContainer {
+    padding: 30px 15px;
+  }
+
+  .plansTitle {
+    width: 90%;
+    padding-bottom: 30px;
+  }
+
+  .plansContainer :global(h4.ant-typography) {
+    font-size: 18px;
+  }
+
+  .plansContainer :global(.ant-typography) {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .plansContainer {
+    padding: 20px 10px;
+  }
+
+  .plansTitle {
+    width: 95%;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .plansContainer :global(h4.ant-typography) {
+    font-size: 16px;
+  }
+
+  .plansContainer :global(.ant-typography) {
+    font-size: 14px;
+  }
+
+  .plansContainer :global(.ant-table) {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .plansContainer {
+    padding: 15px 5px;
+  }
+
+  .plansTitle {
+    width: 100%;
+    padding-bottom: 15px;
+  }
+
+  .plansContainer :global(h4.ant-typography) {
+    font-size: 14px;
+  }
+
+  .plansContainer :global(.ant-typography) {
+    font-size: 12px;
+  }
+
+  .plansContainer :global(.ant-table) {
+    font-size: 10px;
+  }
+
+  .plansContainer :global(.ant-table-thead > tr > th),
+  .plansContainer :global(.ant-table-tbody > tr > td) {
+    padding: 8px 4px;
+  }
 }
