@@ -1,10 +1,10 @@
-import "../styles/Footer.css";
+import styles from "../styles/Footer.module.css";
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <div className="footer-container">
-        <img className="footer-icon" src="./github-icon.png" alt="Icon" />
+    <div className={styles.footer}>
+      <div className={styles.footerContainer}>
+        <img className={styles.footerIcon} src="./github-icon.png" alt="Icon" />
       </div>
     </div>
   );

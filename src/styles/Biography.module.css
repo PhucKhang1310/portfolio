@@ -1,10 +1,8 @@
 .biography {
-  background-color: rgb(44, 44, 44);
-  position: relative;
-  margin-top: 60px;
+  margin-top: 120px;
 }
 
-.bio-container {
+.bioContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,7 +11,7 @@
   padding: 10px 0;
 }
 
-.bio-grid {
+.bioGrid {
   display: grid;
   grid-template-columns: 60% 40%;
   gap: 2rem;
@@ -21,34 +19,43 @@
   align-items: center;
 }
 
-.bio-left {
+.bioLeft {
   text-align: left;
   padding: 20px 0;
 }
 
-.bio-subtitle {
+.bioSubtitle {
   font-size: 1rem;
   margin-top: 10px;
 }
 
-.bio-img {
+.bioImg {
   width: 160px ;
   height: 220px;
   object-fit: cover;
   object-position: center;
 }
 
-.bio-right{
+.bioRight {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: left;
 }
 
-.bio-img-tagline{
+.bioImgTagline {
   width: 160px;
   overflow-wrap: break-word;
 }
 
+.bioContainer :global(.ant-typography) {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
 
-
+.bioContainer :global(h1.ant-typography) {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 45px;
+}

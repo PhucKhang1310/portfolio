@@ -34,7 +34,9 @@ const columns = [
     dataIndex: "plan",
     align: "left" as const,
     width: "200px",
-    render: (text: string) => <Text>{text}</Text>,
+    render: (text: string) => (
+      <Text style={{ backgroundColor: "transparent" }}>{text}</Text>
+    ),
   },
   {
     title: "Icon",

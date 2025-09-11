@@ -1,8 +1,8 @@
 import type { TabsProps } from "antd";
-import { ConfigProvider, Tabs } from "antd";
-import "../styles/NavBar.css";
+import { Tabs } from "antd";
 import PlanetCanvas from "./PlanetCanvas";
 import ScrollProgressBar from "./ScrollProgressBar";
+import styles from "../styles/NavBar.module.css";
 
 const tabs: TabsProps["items"] = [
   { key: "Home", label: "Home" },
@@ -15,27 +15,13 @@ interface NavBarProps {
 
 const NavBar = ({ onChange }: NavBarProps) => {
   return (
-    <div className="navbar">
-      <ConfigProvider
-        theme={{
-          components: {
-            Tabs: {
-              cardBg: "transparent",
-              itemColor: "white",
-              inkBarColor: "transparent",
-              itemSelectedColor: "rgba(0, 174, 197, 0.43)",
-              itemHoverColor: "rgba(0, 174, 197, 0.43)",
-              itemActiveColor: "rgba(0, 174, 197, 0.43)",
-            },
-          },
-        }}
-      >
-        <div className="navbar-container">
-          <div>
-            <PlanetCanvas size={1} />
+    <div className={styles.navbar}>
+      
+        <div className={styles.navbarContainer}>
+          <div className={styles.planetContainer}>
+            <PlanetCanvas size={3.5} rotateSpeed={10}/>
           </div>
-          <div></div>
-          <div className="navbar-links">
+          <div className={styles.navbarLinks}>
             <Tabs
               defaultActiveKey="Home"
               items={tabs}
@@ -45,10 +31,9 @@ const NavBar = ({ onChange }: NavBarProps) => {
             />
           </div>
         </div>
-        <div className="scroll-bar">
+        <div className={styles.scrollBar}>
           <ScrollProgressBar />
         </div>
-      </ConfigProvider>
     </div>
   );
 };

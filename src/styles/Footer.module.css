@@ -1,19 +1,14 @@
-.footer{
-      background-color: rgb(44, 44, 44);
-
-}
-
-.footer-container {
+.footerContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 
-.footer-icon {
-  color: white;
+.footerIcon {
   height: 75px;
   width: 75px;
   object-fit: cover;
   filter: invert();
+  background-color: transparent;
 }

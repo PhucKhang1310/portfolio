@@ -1,0 +1,56 @@
+.plansContainer{
+    background-color: rgb(44,44,44);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.plansTitle{
+    width: 40%;
+    text-align: left;
+    padding-bottom: 40px;
+}
+
+.plansContainer :global(.ant-typography) {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+
+.plansContainer :global(h4.ant-typography) {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+.plansContainer :global(.ant-table),
+.plansContainer :global(.ant-table-container),
+.plansContainer :global(.ant-table-wrapper),
+.plansContainer :global(.ant-table-thead > tr > th),
+.plansContainer :global(.ant-table-tbody > tr > td),
+.plansContainer :global(.ant-table-tbody > tr),
+.plansContainer :global(.ant-table-thead > tr) {
+  border: none !important;
+  border-bottom: none !important;
+}
+
+.plansContainer :global(.ant-table-tbody > tr:hover > td) {
+    background-color: rgb(58, 58, 58) !important;
+}
+
+.plansContainer :global(.ant-table-tbody > tr > td .anticon) {
+    background-color: transparent !important;
+}
+
+.plansContainer :global(.ant-table-tbody > tr > td .anticon),
+.plansContainer :global(.ant-table-tbody > tr > td .anticon svg),
+.plansContainer :global(.ant-table-tbody > tr > td span.anticon),
+.plansContainer :global(.ant-table-tbody > tr > td span),
+.plansContainer :global(.ant-table-tbody > tr:hover > td .anticon),
+.plansContainer :global(.ant-table-tbody > tr:hover > td .anticon svg),
+.plansContainer :global(.ant-table-tbody > tr:hover > td span.anticon),
+.plansContainer :global(.ant-table-tbody > tr:hover > td span) {
+    background-color: transparent !important;
+    background: transparent !important;
+}

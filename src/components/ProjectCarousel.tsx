@@ -1,5 +1,6 @@
-import { Carousel, ConfigProvider } from "antd";
+import { Carousel } from "antd";
 import ProjectCards from "./ProjectCards";
+import styles from "../styles/ProjectCarousel.module.css";
 
 const projectInfo = [
   { title: "Project 1", content: "My First Project" },
@@ -14,25 +15,15 @@ const otherInfo = [
 
 const ProjectCarousel = () => {
   return (
-    <div style={{ padding: "10px 30px", backgroundColor:"rgb(44,44,44)" }}>
-      <ConfigProvider
-        theme={{
-          components: {
-            Carousel: {
-              colorBgContainer: "white",
-            },
-          },
-        }}
-      >
-        <Carousel autoplay={true} arrows={true} style={{ maxWidth: 800, margin: "0 auto" }}>
-          <div>
-            <ProjectCards cardInfo={projectInfo} />
-          </div>
-          <div>
-            <ProjectCards cardInfo={otherInfo} />
-          </div>
-        </Carousel>
-      </ConfigProvider>
+    <div className={styles.container}>
+      <Carousel autoplay={true} arrows={true} className={styles.carousel}>
+        <div>
+          <ProjectCards cardInfo={projectInfo} />
+        </div>
+        <div>
+          <ProjectCards cardInfo={otherInfo} />
+        </div>
+      </Carousel>
     </div>
   );
 };

@@ -1,0 +1,59 @@
+.navbar {
+  width: 100%;
+  height: 80px;
+  top: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  padding-top: 18px;
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding-top: 20px;
+}
+
+.navbarAvatar {
+  border-radius: 50%;
+}
+
+.navbarLinks {
+  height: 100%;
+  padding-top: 20px;
+}
+
+.navbarLinks :global(.ant-tabs-top) {
+  height: 100% !important;
+}
+
+.navbarLinks :global(.ant-tabs-nav .ant-tabs-tab .ant-tabs-tab-btn) {
+  color: white;
+}
+
+
+.navbarLinks :global(.ant-tabs-nav .ant-tabs-tab-active .ant-tabs-tab-btn),
+.navbarLinks :global(.ant-tabs-nav .ant-tabs-tab:hover .ant-tabs-tab-btn) {
+  color: rgba(0, 174, 197, 0.43);
+}
+
+.navbarLinks :global(.ant-tabs-content-holder) {
+  display: none !important;
+}
+
+.scrollBar {
+  width: 100%;
+}
+
+.planetContainer {
+  height: 60px;
+  width: 100px;
+  flex-shrink: 0;
+}
+
+

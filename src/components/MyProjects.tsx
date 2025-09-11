@@ -1,23 +1,14 @@
 import Title from "antd/es/typography/Title";
 import ProjectCarousel from "./ProjectCarousel";
-import "../styles/MyProjects.css";
-import { ConfigProvider } from "antd";
+import styles from "../styles/MyProjects.module.css";
 
 const MyProjects = () => {
   return (
-    <div className="projects-container">
-      <ConfigProvider theme={{
-        components: {
-            Typography: {
-                colorTextHeading: "white",
-            }
-        }
-      }}>
-          <Title className="projects-title" level={4}>
-            Things I've worked on
-          </Title>
-          <ProjectCarousel />
-      </ConfigProvider>
+    <div className={styles.projectsContainer}>
+      <Title className={styles.projectsTitle} level={4}>
+        Things I've worked on
+      </Title>
+      <ProjectCarousel />
     </div>
   );
 };
