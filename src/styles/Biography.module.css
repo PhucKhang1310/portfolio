@@ -59,3 +59,20 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 45px;
 }
+
+@media (max-width: 768px) {
+  .bioGrid {
+    grid-template-columns: 1fr;
+    width: 80%;
+    text-align: center;
+  }
+
+  .bioLeft {
+    padding: 0;
+  }
+
+  .bioRight {
+    align-items: center;
+    text-align: center;
+  }
+}

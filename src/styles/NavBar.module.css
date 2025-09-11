@@ -24,25 +24,29 @@
 }
 
 .navbarLinks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   height: 100%;
   padding-top: 20px;
+  width: 500px;
 }
 
 .navbarLinks :global(.ant-tabs-top) {
   height: 100% !important;
 }
 
-.navbarLinks :global(.ant-tabs-nav .ant-tabs-tab .ant-tabs-tab-btn) {
+:global(.ant-tabs-nav .ant-tabs-tab .ant-tabs-tab-btn) {
   color: white;
 }
 
 
-.navbarLinks :global(.ant-tabs-nav .ant-tabs-tab-active .ant-tabs-tab-btn),
-.navbarLinks :global(.ant-tabs-nav .ant-tabs-tab:hover .ant-tabs-tab-btn) {
-  color: rgba(0, 174, 197, 0.43);
+:global(.ant-tabs-nav .ant-tabs-tab-active .ant-tabs-tab-btn),
+:global(.ant-tabs-nav .ant-tabs-tab:hover .ant-tabs-tab-btn) {
+  color: rgba(0, 174, 197, 0.43) !important;
 }
 
-.navbarLinks :global(.ant-tabs-content-holder) {
+:global(.ant-tabs-content-holder) {
   display: none !important;
 }
 
@@ -56,4 +60,29 @@
   flex-shrink: 0;
 }
 
+:global(.ant-drawer) {
+  background-color: transparent !important;
+}
 
+:global(.ant-drawer-content) {
+  background-color: rgba(44, 44, 44, 1) !important;
+  color: white !important;
+}
+
+:global(.ant-drawer-body){
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mobileMenu{
+  display: none;
+}
+
+@media (max-width: 768px){
+  .navbarLinks{
+    display: none;
+  }
+  .mobileMenu{
+    display: block;
+  }
+}
